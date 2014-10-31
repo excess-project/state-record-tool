@@ -20,6 +20,22 @@ const char* const PAPI_EVENTS[] = {
   "rapl:::PP0_ENERGY:PACKAGE0",
   "rapl:::PP0_ENERGY:PACKAGE1",
 #endif
+#ifdef HLRSFE
+  "rapl:::PACKAGE_ENERGY:PACKAGE0",
+  "rapl:::PACKAGE_ENERGY:PACKAGE1",
+  "rapl:::DRAM_ENERGY:PACKAGE0",
+  "rapl:::DRAM_ENERGY:PACKAGE1",
+  "rapl:::PP0_ENERGY:PACKAGE0",
+  "rapl:::PP0_ENERGY:PACKAGE1",
+#endif
+#ifdef HLRSEXCESS
+  "rapl:::PACKAGE_ENERGY:PACKAGE0",
+  "rapl:::PACKAGE_ENERGY:PACKAGE1",
+  "rapl:::DRAM_ENERGY:PACKAGE0",
+  "rapl:::DRAM_ENERGY:PACKAGE1",
+  "rapl:::PP0_ENERGY:PACKAGE0",
+  "rapl:::PP0_ENERGY:PACKAGE1",
+#endif
   NULL
 };
 
