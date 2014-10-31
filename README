@@ -1,0 +1,17 @@
+Linux command line utility to read system state at a fixed rate.
+
+INSTALL
+-------
+
+Selection of performance counters are a compile time decision which
+additionally may require a machine specific configuration.
+Select counters and machine configuration by defining the appropriate macros
+during compilation.
+
+Compiling for the PAPI back-ends:
+
+% PAPIDIR=/opt/PAPI/ ./COMPILE.sh -D<machine macro>
+
+Available back-end macros:
+  PAPI_CORETEMP
+  PAPI_RAPL (binary has to be setuid root and have setcap cap_sys_rawio=ep set.)
