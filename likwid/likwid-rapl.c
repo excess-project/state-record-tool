@@ -55,7 +55,8 @@ static void init(FILE* file)
     fprintf (stderr, "likwid-rapl.c: RAPL not supported on this processor!\n");
     exit(EXIT_FAILURE);
   }
-  if (cpuid_info.model == SANDYBRIDGE_EP) {
+  if ((cpuid_info.model == SANDYBRIDGE_EP) ||
+      (cpuid_info.model == IVYBRIDGE_EP)) {
     has_dram = 1;
   }
   has_pp0 = 1;
