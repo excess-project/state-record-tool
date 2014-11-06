@@ -21,6 +21,9 @@ static void* reader_main(void* arg);
 #ifdef PAPI_RAPL
 #include "PAPI/papi-rapl.c"
 #endif
+#ifdef LIKWID_RAPL
+#include "likwid/likwid-rapl.c"
+#endif
 
 volatile int finished = 0;
 pthread_t reader_thread;

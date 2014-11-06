@@ -8,10 +8,23 @@ additionally may require a machine specific configuration.
 Select counters and machine configuration by defining the appropriate macros
 during compilation.
 
-Compiling for the PAPI back-ends:
+Compiling the PAPI back-ends:
 
-% PAPIDIR=/opt/PAPI/ ./COMPILE.sh -D<machine macro>
+1. Set PAPIDIR to the PAPI installation directory.
+
+Compiling the likwid back-end:
+
+1. Set LIKWIDDIR to the likwid installation directory.
+   Set LIKWIDSRC to the likwid source distribution directory.
+
+2. NOTE: In this case the binary falls under GPLv3 due to linking with likwid and thus,
+   in this case, all used state-record-tool sources must and can be distributed as GPLv3.
+
+Compiling:
+
+% ./COMPILE.sh -D<machine macro>
 
 Available back-end macros:
   PAPI_CORETEMP
   PAPI_RAPL (binary has to be setuid root and have setcap cap_sys_rawio=ep set.)
+  LIKWID_RAPL (the likwid msr daemon must be installed and set up.)
