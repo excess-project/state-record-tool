@@ -26,7 +26,7 @@ const char* const PAPI_EVENTS[] = {
   "coretemp:::hwmon2:temp5_input",
 #endif
 #ifdef HLRSEXCESS
-  "coretemp:::hwmon0:temp0_input",
+  "coretemp:::hwmon0:temp1_input",
   "coretemp:::hwmon1:temp1_input",
   "coretemp:::hwmon1:temp2_input",
   "coretemp:::hwmon1:temp3_input",
