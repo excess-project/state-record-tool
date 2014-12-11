@@ -73,6 +73,14 @@ int main(int argc, char** argv)
 
 static void print_usage(int argc, char** argv)
 {
+  printf("state-record-tool\n");
+  printf("  Copyright (C) 2014  Anders Gidenstam\n\n");
+  printf("  This is free software, and you are welcome to redistribute it "
+         "under certain\n"
+         "  conditions. "
+         "  See the GNU GENERAL PUBLIC LICENSE Version 3 for the details.\n"
+         "\n");
+
   printf("Usage: %s [OPTIONS]\n\n", argv[0]);
   printf("  -h                       Print this message and exit.\n");
   printf("  -o <file name>           Save the result in the named file.\n");

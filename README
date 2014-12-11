@@ -31,9 +31,6 @@ Compiling the likwid back-end:
 1. Set LIKWIDDIR to the likwid installation directory.
    Set LIKWIDSRC to the likwid source distribution directory.
 
-2. NOTE: In this case the binary falls under GPLv3 due to linking with likwid and thus,
-   in this case, all used state-record-tool sources must and can be distributed as GPLv3.
-
 Compiling:
 
 % ./COMPILE.sh -D<machine macro>
